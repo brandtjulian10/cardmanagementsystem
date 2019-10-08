@@ -21,19 +21,13 @@
 </html>
 
 
-<script>
-	$('.delete').click(function(){
-		confirm("Are you sure you want to delete?");
-	})
-</script>
-
-
 <?php
 
 $conn = new mysqli('localhost', 'root', '', 'userdata');
 
-if(isset($_POST['dbutton']))
+if(isset($_POST['id']))
 {
+	echo 'hELLO';
 	$id = $_POST['id'];
 	$query = "DELETE FROM person WHERE id='$id'";
 	if(($conn->query($query))->num_rows == 0)
