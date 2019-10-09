@@ -1,7 +1,3 @@
-<?php
-session_start();
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,9 +29,10 @@ session_start();
 </html>
 
 <?php
-$conn = new mysqli('localhost','root','','userdata');
-if($conn->connect_error)
-	die("Fatal Error");
+
+require 'connection.php';
+require 'logged_in_as.php';
+session_start();
 
 if(isset($_POST['name']) && isset($_POST['dob']) && isset($_POST['address']) && isset($_POST['bankacc']) && isset($_POST['phone']) && isset($_POST['gender']))
 {
