@@ -12,7 +12,7 @@ session_start();
 	<center>
 		<div class="formdata">
 		    <table cellpadding="5" cellspacing="15">
-				<form action="form.php" method="post">
+				<form action="login2.php" method="post">
 					<br><br>
 					<tr><td colspan="2"><b>Username</b></td> <td colspan="4"><input type="text" name="username"></td></tr>
 					<tr><td colspan="2"><b>Password</b></td> <td colspan="4"><input type="password" name="password"></td></tr>
@@ -26,19 +26,15 @@ session_start();
 </html>
 
 <?php
-session_start();
 require 'connection.php';
-echo'<script> alert("Yo")</script>';
 if((isset($_POST['password'])) && (isset($_POST['username'])))
-{
-	echo'<script> alert("Yo")</script>';
+{ 
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	$query = "SELECT * FROM admin WHERE username='$username' AND password='$password'";
 	$result = $conn->query($query);
-	echo'<script> alert("Yo")</script>';
 	if($result->num_rows == 0)
-		echo'<script> alert("You have supplied invalid login credentials. Please \try again")</script>';
+		echo'<script> alert("You have supplied invalid login credentials. Please try again")</script>';
 	else
 	{
 		$_SESSION['login_status'] = true;

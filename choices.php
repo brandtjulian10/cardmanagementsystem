@@ -18,7 +18,7 @@
 </html>
 
 <?php
-session_start();
+require 'authenticate.php';
 require 'logged_in_as.php';
 
 ?>

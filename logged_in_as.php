@@ -1,5 +1,4 @@
 <?php 
-session_start();
 
 echo'
 <div align="right">
@@ -7,6 +6,6 @@ echo'
 '<br>
 <a href=logout.php>   logout</a>
 </h5>
-</div>'
+</div>';
 
 ?>
