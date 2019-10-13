@@ -29,6 +29,7 @@ session_start();
 require 'connection.php';
 if((isset($_POST['password'])) && (isset($_POST['username'])))
 { 
+		echo'<script> alert("You have supplied invalid login credentials. Please try again")</script>';
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	$query = "SELECT * FROM admin WHERE username='$username' AND password='$password'";
