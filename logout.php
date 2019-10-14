@@ -5,4 +5,5 @@ $_SESSION['username'] = "";
 unset($_SESSION['login_status']);
 session_destroy();
 echo "Logged Out!";
+header('location:home.php');
 ?>

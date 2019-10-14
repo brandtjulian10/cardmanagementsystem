@@ -44,7 +44,7 @@ if($result->num_rows > 0)
 			</tr>
 		';
 	}
-	echo '<center>'.$output.'+</center>';
+	echo '<center>'.$output.'</center>';
 }
 else
 {

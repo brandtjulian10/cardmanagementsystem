@@ -58,3 +58,18 @@ $(document).ready(function(){
 	});
 });
 </script>
+
+<html>
+<body>
+	<br>
+	<br>
+	<a href='choices.php'> Choose a different option </a>
+</body>
+</html>
+
+
+<?php
+require 'authenticate.php';
+require 'logged_in_as.php';
+
+?>

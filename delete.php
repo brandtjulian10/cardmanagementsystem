@@ -48,3 +48,6 @@
         
 	})
 </script>
+<?php
+    include 'logged_in_as.php';
+?>
