@@ -4,17 +4,17 @@
 		<title>Person</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	</head>
-	<body>
+	<body BGCOLOR ="FFFFFFF">
 		<div class="container">
 			<br>
 			<br>
 			<br>
 			<h2 align="center">Person</h2><br />
 			<div class="form-group">
-				<div class="input-group">
+				<center><div class="input-group">
 					<span class="input-group-addon">Search</span>
 					<input type="text" name="search_text" id="search_text" placeholder="Search by Person Details" class="form-control" />
-				</div>
+				</div></center>
 			</div>
 			<br>
 			<div id="result"></div>
@@ -63,7 +63,7 @@ $(document).ready(function(){
 <body>
 	<br>
 	<br>
-	<a href='choices.php'> Choose a different option </a>
+	<center><a href='choices.php'> Choose a different option </a></center>
 </body>
 </html>
 

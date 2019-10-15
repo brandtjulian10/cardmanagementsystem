@@ -4,7 +4,7 @@
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 </head>
 
-<body>
+<body BGCOLOR ="FFFFFFF">
 	<br><br>
 	<center>
 		<table cellpadding="5" cellspacing="15">

@@ -10,6 +10,7 @@ session_start();
 </head>
 <body>
 	<center>
+		<h1> Respective Admin/Card registrar, login here </h1>
 		<div class="formdata">
 		    <table cellpadding="5" cellspacing="15">
 				<form action="login2.php" method="post">

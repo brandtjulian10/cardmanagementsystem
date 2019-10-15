@@ -2,25 +2,28 @@
 
 <body BGCOLOR ="FFFFFFF">
 	<div>
-		<p style="color:red;font-size:28px;" align="center">
+		<p style="color:red;font-size:60px;" align="center">
 			<b><u>Aadhaar</u></b>
-			<p style="color:green;font-size:18px;" align="center">Unique Identification Card <br> <br> <br> </p>
+			<p style="color:green;font-size:30px;" align="center">Unique Identification Card <br> <br> <br> </p>
 		</p>
 	</div>
 
    <div> 
        <table border="3px" cellpadding="20px" width="100%" cellspacing="1px" align="center">
        <tr> 
-       	<th><b>Home</b></th>
-       	<th><b>Registration</b></th>
-       	<th><b>Rules & Regulations</b></th>
+       	<th><b><a href="home.php">Home</a></b></th>
+       	<th><b><a href="login2.php">Registration</a></b></th>
+       	<th><b><a href="rr.php">Rules & Regulations</a></b></th>
        <tr> 
        </table> 
    </div>
 
 	<div width="200px">
 		<center>
-		<p style=font-size:14px; align="center" width="60%">
+			<br>
+			<br>
+			<img src="aadhaar.jpg" height="300px" width="62%">
+		<p style="font-size:20px; align:center; width:85%"> 
 			<br>
 			<br>
 			<br>

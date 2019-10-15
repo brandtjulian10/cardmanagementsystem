@@ -11,3 +11,8 @@ echo'
 </div>';
 
 ?>
+
+<html>
+<body BGCOLOR ="FFFFFFF">
+</body>
+</html>

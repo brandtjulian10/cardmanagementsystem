@@ -21,6 +21,7 @@ echo'
 			<table cellpadding="5" cellspacing="15" border="2">
 				<form action="form.php" method="post">
 					<br><br>
+					<tr><td colspan="2"><b>ID</b></td> <td colspan="4">'.$id.'</td></tr>
 					<tr><td colspan="2"><b>Full Name</b></td> <td colspan="4">'.$name.'</td></tr>
 					<tr><td colspan="2"><b>Date Of Birth</b></td> <td colspan="4">'.$dob.'</td></tr>
 					<tr><td colspan="2"><b>Address</b></td> <td colspan="4">'.$address.'</td></tr>
