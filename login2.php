@@ -1,7 +1,23 @@
 <?php
-session_start();
+require 'connection.php';
+if((isset($_POST['password'])) && (isset($_POST['username'])))
+{ 
+	$username = $_POST['username'];
+	$password = $_POST['password'];
+	$query = "SELECT * FROM admin WHERE username='$username' AND password='$password'";
+	$result = $conn->query($query);
+	if(!$result->num_rows > 0)
+	{	
+		echo'<script> alert("You have supplied invalid login credentials. Please try again")</script>';
+	}
+	else
+	{
+		$_SESSION['login_status'] = true;
+		$_SESSION['username'] = $username;
+		echo "<script type='text/javascript'> document.location = 'choices.php'; </script>";
+	}
+}
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +26,6 @@ session_start();
 </head>
 <body>
 	<center>
-		<h1> Respective Admin/Card registrar, login here </h1>
 		<div class="formdata">
 		    <table cellpadding="5" cellspacing="15">
 				<form action="login2.php" method="post">
@@ -25,22 +40,3 @@ session_start();
 
 </body>
 </html>
-
-<?php
-require 'connection.php';
-if((isset($_POST['password'])) && (isset($_POST['username'])))
-{ 
-		echo'<script> alert("You have supplied invalid login credentials. Please try again")</script>';
-	$username = $_POST['username'];
-	$password = $_POST['password'];
-	$query = "SELECT * FROM admin WHERE username='$username' AND password='$password'";
-	$result = $conn->query($query);
-	if($result->num_rows == 0)
-		echo'<script> alert("You have supplied invalid login credentials. Please try again")</script>';
-	else
-	{
-		$_SESSION['login_status'] = true;
-		$_SESSION['username'] = $username;
-		header('location:choices.php');
-	}
-}

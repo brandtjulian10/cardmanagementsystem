@@ -1,5 +1,6 @@
 <?php
-
+error_reporting(E_ALL);
+ini_set('display_errors', TRUE);
 $conn = new mysqli('localhost',/*'id11325713_carddb'*/'root',/*'carddb123'*/'','userdata');
 if (session_status() == PHP_SESSION_NONE) { /*check if session is aactive and create if it doesnt exist*/
 session_start();
