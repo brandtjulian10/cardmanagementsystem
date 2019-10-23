@@ -5,9 +5,10 @@ session_start();
 if( isset( $_SESSION['login_status'] ))
 {
 	if(!$_SESSION['login_status']=="true")
-	header("Location: login.php");
+		echo "<script type='text/javascript'> document.location = 'login.html'; </script>";
+
 }
 else{
-	header("Location: login.php");
+		echo "<script type='text/javascript'> document.location = 'login.html'; </script>";
 }
 ?>

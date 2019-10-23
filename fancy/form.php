@@ -32,7 +32,6 @@
 
 require 'connection.php';
 require 'logged_in_as.php';
-session_start();
 
 if(isset($_POST['name']) && isset($_POST['dob']) && isset($_POST['address']) && isset($_POST['bankacc']) && isset($_POST['phone']) && isset($_POST['gender']))
 {

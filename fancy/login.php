@@ -15,17 +15,19 @@ if( isset($_POST['password']) && isset($_POST['username']) )
 	$result = $conn->query($query);
 	if($result->num_rows == 0){
 		echo'<script> alert("You have supplied invalid login credentials. Please try again")</script>';
-		header("Refresh:1; url = index.html");
+		echo "<script type='text/javascript'> document.location = 'login.html'; </script>";
+
 	}
 	else
 	{
 		$_SESSION['login_status'] = true;
 		$_SESSION['username'] = $username;
-		header('location:choices.php');
+		echo "<script type='text/javascript'> document.location = 'choices.php'; </script>";
+
 	}
 }
 else{
-	header('Location:index.html');
+	echo "<script type='text/javascript'> document.location = 'login.html'; </script>";
 }
 
 ?>
